@@ -20,4 +20,4 @@ I am using [Bulma](https://bulma.io), simple_form, and better_errors gems!
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions:
-- Deploy to AWS
+  - Deploy to AWS: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ruby-rails-tutorial.html
