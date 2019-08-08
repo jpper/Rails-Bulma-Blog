@@ -1,11 +1,11 @@
-# README
+# Welcome to my Rails App/Blog!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a repository to help me learn Rails, while also making a nice
+blog site.
 
-Things you may want to cover:
+I am using [Bulma CSS](https://www.bulma.io), simple_form, and better_errors gems!
 
-* Ruby version
+* Ruby version: 2.5.3
 
 * System dependencies
 
@@ -19,6 +19,5 @@ Things you may want to cover:
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
+* Deployment instructions:
+- Deploy to AWS
