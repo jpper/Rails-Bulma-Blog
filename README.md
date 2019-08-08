@@ -3,7 +3,7 @@
 This is a repository to help me learn Rails, while also making a nice
 blog site.
 
-I am using [Bulma CSS](https://www.bulma.io), simple_form, and better_errors gems!
+I am using [Bulma](https://bulma.io), simple_form, and better_errors gems!
 
 * Ruby version: 2.5.3
 
