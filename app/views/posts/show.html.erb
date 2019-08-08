@@ -16,11 +16,11 @@
         </p>
         <p class="level-item">
           <%= link_to "Delete", post_path(@post), method: :delete, data: {
-          confirm: "Are you sure?" }, class: "button is-danger" %>
+              confirm: "Are you sure?"}, class: "button is-danger" %>
         </p>
       </div>
     </nav>
-    <hr />
+    <hr/>
 
     <div class="content">
       <%= @post.content %>
