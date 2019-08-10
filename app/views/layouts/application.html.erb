@@ -29,23 +29,22 @@
             <a class="navbar-item">
               Home
             </a>
-            <a class="navbar-item">
-              <%= link_to "Create New Post", new_post_path,
-                          class: "navbar-item" %>
-            </a>
-            <a class="navbar-item">
-              About
-            </a>
-            <a class="navbar-item">
-              Projects
-            </a>
-            <a class="navbar-item">
+            <div class="navbar-item">
+              <%= link_to "Create New Post", new_post_path, class: "navbar-item" %>
+            </div>
+            <div class="navbar-item">
+              <%= link_to "About", about_show_path, class: "navbar-item" %>
+            </div>
+            <div class="navbar-item">
+              <%= link_to "Projects", projects_path, class: "navbar-item" %>
+            </div>
+            <div class="navbar-item">
               <% if signed_in? %> Signed in as: <%= current_user.email %>
                 <%= button_to 'Sign out', sign_out_path, method: :delete %>
               <%
                 else %> <%= link_to 'Sign in', sign_in_path %>
               <% end %>
-            </a>
+            </div>
           </div>
         </div>
       </div>
