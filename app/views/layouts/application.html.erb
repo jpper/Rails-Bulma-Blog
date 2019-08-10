@@ -1,54 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Jonathans Blog</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Jonathans Blog</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-  <header>
-    <% if signed_in? %>
-      Signed in as: <%= current_user.email %>
-      <%= button_to 'Sign out', sign_out_path, method: :delete %>
-    <% else %>
-      <%= link_to 'Sign in', sign_in_path %>
-    <% end %>
-  </header>
+<body>
+<header></header>
 
-    <section class="hero is-primary is-medium">
-      <div class="hero-head">
-        <nav class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
-              <%= link_to 'Jonathan Perry', root_path, class: "navbar-item" %>
-              <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+<section class="hero is-primary is-medium">
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <%= link_to 'Jonathan Perry', root_path, class: "navbar-item" %>
+          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
                 <span></span>
                 <span></span>
                 <span></span>
               </span>
-            </div>
-            <div id="navbarMenuHeroA" class="navbar-menu">
-              <div class="navbar-end">
-                <%= link_to "Create New Post", new_post_path, class:"navbar-item" %>
-              </div>
-            </div>
+        </div>
+        <div id="navbarMenuHeroA" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item">
+              Home
+            </a>
+            <a class="navbar-item">
+              <%= link_to "Create New Post", new_post_path,
+                          class: "navbar-item" %>
+            </a>
+            <a class="navbar-item">
+              About
+            </a>
+            <a class="navbar-item">
+              Projects
+            </a>
+            <a class="navbar-item">
+              <% if signed_in? %> Signed in as: <%= current_user.email %>
+                <%= button_to 'Sign out', sign_out_path, method: :delete %>
+              <%
+                else %> <%= link_to 'Sign in', sign_in_path %>
+              <% end %>
+            </a>
           </div>
-        </nav>
-      </div>
-
-      <!-- Hero content-->
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title">
-            <%= yield :page_title %>
-          </h1>
         </div>
       </div>
-    </section>
-    <%= yield %>
-  </body>
+    </nav>
+  </div>
+
+  <!-- Hero content-->
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        <%= yield :page_title %>
+      </h1>
+    </div>
+  </div>
+</section>
+<%= yield %>
+</body>
 </html>
