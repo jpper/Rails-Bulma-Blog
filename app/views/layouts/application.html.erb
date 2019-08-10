@@ -26,10 +26,10 @@
         </div>
         <div id="navbarMenuHeroA" class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item">
-              Home
-            </a>
             <div class="navbar-item">
+              <%= link_to 'Home', root_path, class: "navbar-item" %>
+            </div>
+              <div class="navbar-item">
               <%= link_to "Create New Post", new_post_path, class: "navbar-item" %>
             </div>
             <div class="navbar-item">
