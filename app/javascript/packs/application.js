@@ -20,3 +20,5 @@ require("channels")
 //= require jquery_ujs
 //= require_tree
 //= require post
+//= require popper
+//= require bootstrap
