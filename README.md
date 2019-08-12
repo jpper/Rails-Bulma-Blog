@@ -22,3 +22,6 @@ I am using [Bulma](https://bulma.io), simple_form, and better_errors gems!
 * Deployment instructions:
   - Deploy to AWS: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ruby-rails-tutorial.html
   - Command is: ```zip ../rails-default.zip -r * .[^.]*```
+
+# CircleCI Integration  
+[![CircleCI](https://circleci.com/gh/jpper/Rails-Bulma-Blog.svg?style=svg)](https://circleci.com/gh/jpper/Rails-Bulma-Blog)
