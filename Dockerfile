@@ -2,7 +2,7 @@ FROM ruby:2.6.3-alpine3.9
 
 RUN mkdir /myapp
 WORKDIR /myapp
-COPY Rails-Bulma-Blog /myapp
+COPY . /myapp
 RUN set -ex && \
   apk update && \
   apk add --no-cache libstdc++ postgresql-dev tzdata build-base bash nodejs npm yarn && \
