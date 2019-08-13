@@ -11,3 +11,4 @@ RUN set -ex && \
 RUN gem install bundle
 RUN yarn install --check-files
 EXPOSE 3000
+CMD ["rails", "server", "-b", "0.0.0.0"]
